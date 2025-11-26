@@ -1,0 +1,123 @@
+.personality-profile {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 30px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--ts-purple);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--ts-purple) 0%, var(--ts-pink) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.profile-summary {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--ts-dark);
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(240, 147, 251, 0.1) 100%);
+  border-radius: 15px;
+  border-left: 4px solid var(--ts-gold);
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.profile-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.profile-section {
+  background: linear-gradient(135deg, rgba(118, 75, 162, 0.05) 0%, rgba(240, 147, 251, 0.05) 100%);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 2px solid rgba(118, 75, 162, 0.2);
+  transition: all 0.3s ease;
+}
+
+.profile-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(118, 75, 162, 0.2);
+  border-color: var(--ts-purple);
+}
+
+.profile-section h3 {
+  color: var(--ts-purple);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.profile-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-section li {
+  color: var(--ts-dark);
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.profile-section li:before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+}
+
+.profile-section:nth-child(2) li:before {
+  content: "💪";
+}
+
+.profile-section:nth-child(3) li:before {
+  content: "🌙";
+}
+
+@media (max-width: 900px) {
+  .profile-sections {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-title {
+    font-size: 2rem;
+  }
+  
+  .profile-summary {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .personality-profile {
+    padding: 1.5rem;
+  }
+  
+  .profile-section {
+    padding: 1.25rem;
+  }
+  
+  .profile-title {
+    font-size: 1.75rem;
+  }
+  
+  .profile-summary {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+

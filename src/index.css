@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Taylor Swift inspired color palette */
+  --ts-purple: #764ba2;
+  --ts-pink: #f093fb;
+  --ts-blue: #667eea;
+  --ts-gold: #ffd700;
+  --ts-cream: #fff8e7;
+  --ts-dark: #2d1b3d;
+
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #2d1b3d;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 700;
+}
+
+button {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
