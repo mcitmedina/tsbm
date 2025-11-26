@@ -2,6 +2,14 @@
 
 A magical web app that creates your unique Taylor Swift song combination and personality profile based on your birthday!
 
+## 📸 Screenshots
+
+### Main Page
+![Main Page](mainpage.png)
+
+### Your Results
+![Results Page](result.png)
+
 ## ✨ What Is This?
 
 Enter your birthday and discover:
